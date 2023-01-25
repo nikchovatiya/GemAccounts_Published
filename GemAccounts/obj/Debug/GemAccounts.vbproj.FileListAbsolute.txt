@@ -4619,9 +4619,6 @@ C:\Users\hp\Desktop\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.pdb
 C:\Users\hp\Desktop\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.vbprojResolveAssemblyReference.cache
 C:\Users\hp\Desktop\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.FrmSale.resources
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\GemAccounts.exe.config
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.exe
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.xml
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.pdb
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\GemAccounts.exe.manifest
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\GemAccounts.application
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\GemAccounts.exe
@@ -4820,10 +4817,11 @@ D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\de\DevExpress.D
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\es\DevExpress.Diagram.v20.1.Core.resources.dll
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\ja\DevExpress.Diagram.v20.1.Core.resources.dll
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\bin\Debug\ru\DevExpress.Diagram.v20.1.Core.resources.dll
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.vbprojResolveAssemblyReference.cache
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.frmDefaultGroup.resources
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.FrmLedger.resources
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.frmMainGroup.resources
+D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.FrmRapaportCredentials.resources
+D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.FrmUserPermission.resources
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.frmReceiptReport.resources
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.frmReceipt.resources
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.frmPayment.resources
@@ -4888,5 +4886,7 @@ D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.vbp
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.exe.licenses
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.exe.manifest
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.application
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.FrmRapaportCredentials.resources
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.FrmUserPermission.resources
+D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.exe
+D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.xml
+D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.pdb
+D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.vbprojResolveAssemblyReference.cache

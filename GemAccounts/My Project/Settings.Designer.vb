@@ -53,18 +53,17 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LSRPRP2\WAYSOFT;Initial Catalog=DIA_MASTER;Integrated Securit"& _ 
-            "y=True")>  _
+
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
+   Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LSRPRP2\WAYSOFT;Initial Catalog=DIA_MASTER;Integrated Security=True")>
         Public ReadOnly Property DIA_MASTERConnectionString() As String
             Get
-                Return CType(Me("DIA_MASTERConnectionString"),String)
+                Return CType(Me("DIA_MASTERConnectionString"), String)
             End Get
         End Property
-        
+
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _

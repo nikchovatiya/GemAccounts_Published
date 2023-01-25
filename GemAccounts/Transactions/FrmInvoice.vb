@@ -50,11 +50,6 @@ Public Class FrmInvoice
         'TODO: This line of code loads data into the 'Dia_MasterDataset.Dia_Shape_Master' table. You can move, or remove it, as needed.
         Me.Dia_Shape_MasterTableAdapter.Fill(Me.Dia_MasterDataset.Dia_Shape_Master)
 
-        If GLOBAL_VARIABLES.SalesEditFlag = True Then
-
-        End If
-
-
         cancel()
 
         If GLOBAL_VARIABLES.SalesEditFlag = False Then
