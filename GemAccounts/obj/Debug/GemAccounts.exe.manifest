@@ -44,16 +44,6 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.SqlServer.Types" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
@@ -118,14 +108,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Data.v20.1.dll" size="6332416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Data.v20.1.dll" size="6343168">
       <assemblyIdentity name="DevExpress.Data.v20.1" version="20.1.3.0" publicKeyToken="B88D1754D700E49A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nYqLUa90Memb0WDz6Yk7Uk1hKLCLMxX0uWgxR63wzgA=</dsig:DigestValue>
+        <dsig:DigestValue>K+/R7+QpCg6OlWVGDkj08/XaaMVelDebaDpVj8D9CmE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1990,14 +1980,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GemAccounts.exe" size="3353600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GemAccounts.exe" size="3378688">
       <assemblyIdentity name="GemAccounts" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FCfOe4ssOhv/o+QmnG6yXeuSx93mHP68FAF7ltGFgLg=</dsig:DigestValue>
+        <dsig:DigestValue>gxhTiEpUNfl8xZBTws+YOmbHGE4soFVfItKJv6HGNxM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2046,13 +2036,13 @@
       <dsig:DigestValue>CO4mX3ZLtfV/igx8t4X3c0VUrcuRYntgx4muMYkYjZ4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GemAccounts.exe.config" size="2648">
+  <file name="GemAccounts.exe.config" size="2651">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>chWwuUFBwVoNLb9VIdfpGdLSY7YIRiqnx7kk6I8CPVg=</dsig:DigestValue>
+      <dsig:DigestValue>xts4NJadFqqBFt5S3hW8Lwirptnj3lTbC4gjnZRIcoA=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

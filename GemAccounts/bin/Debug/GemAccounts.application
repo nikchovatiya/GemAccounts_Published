@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="GemAccounts.exe.manifest" size="124442">
+    <dependentAssembly dependencyType="install" codebase="GemAccounts.exe.manifest" size="123802">
       <assemblyIdentity name="GemAccounts.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oG5QpywkmpZTZf8nQfjdcXMiJHFjdPIk0alA6X2oCUo=</dsig:DigestValue>
+        <dsig:DigestValue>DPEPv4kztbLAjfk8Y6fbdZEez7WAKEW8EuJNowjtXrc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -41,20 +41,8 @@ Public Class FrmMain
             child.Activate()
         End If
     End Sub
-    Private Sub BtnCompany_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCompany.ItemClick
-        setform(FrmCompany)
-    End Sub
-
     Private Sub BtnShape_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnShape.ItemClick
         setform(FrmSCC)
-    End Sub
-
-    Private Sub BtnBranch_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnBranch.ItemClick
-        setform(FrmBranch)
-    End Sub
-
-    Private Sub BtnUser_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnUser.ItemClick
-        setform(FrmUsers)
     End Sub
 
     Private Sub BtnCPS_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnCPS.ItemClick
@@ -108,19 +96,15 @@ Public Class FrmMain
             XtraMessageBox.Show("Internet Not Working...", "Mauni Diamond", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
-        SplashScreenManager.ShowForm(Me, GetType(WaitForm1), True, True, False)
-        Try
-            rap.getrapaport()
-        Finally
-            'Close Wait Form
-            SplashScreenManager.CloseForm(False)
-            XtraMessageBox.Show("Rapaport Prices has been updated.", "Mauni Diamond", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End Try
 
-    End Sub
-
-    Private Sub BarButtonItem7_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnImportExcel.ItemClick
-
+        If rap.getrapaport() = True Then
+            SplashScreenManager.ShowForm(Me, GetType(WaitForm1), True, True, False)
+            Try
+            Finally
+                SplashScreenManager.CloseForm(False)
+                XtraMessageBox.Show("Rapaport Prices has been updated.", "Mauni Diamond", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End Try
+        End If
     End Sub
 
     Private Sub BarButtonItem8_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem8.ItemClick
@@ -145,6 +129,7 @@ Public Class FrmMain
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = UNAME
+        If UserPermission.ShowAdminTab = False Then MenuAdmin.Visible = False
     End Sub
     Private Sub BarButtonItem14_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem14.ItemClick
         setform(FrmSendtoProcess)
@@ -274,5 +259,25 @@ Public Class FrmMain
 
     Private Sub btnSale_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSale.ItemClick
         setform(FrmSale)
+    End Sub
+
+    Private Sub btnRapaportCredentials_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnRapaportCredentials.ItemClick
+        setform(FrmRapaportCredentials)
+    End Sub
+
+    Private Sub BtnComp_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnComp.ItemClick
+        setform(FrmCompany)
+    End Sub
+
+    Private Sub BtnBranch__ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnBranch_.ItemClick
+        setform(FrmBranch)
+    End Sub
+
+    Private Sub BtnUser__ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BtnUser_.ItemClick
+        setform(FrmUsers)
+    End Sub
+
+    Private Sub btnUserPermissions_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnUserPermissions.ItemClick
+        setform(FrmUserPermission)
     End Sub
 End Class

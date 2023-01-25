@@ -115,6 +115,11 @@ Partial Class FrmMain
         Me.btnPriceUpdate = New DevExpress.XtraBars.BarButtonItem()
         Me.btnGradingComparision = New DevExpress.XtraBars.BarButtonItem()
         Me.btnSale = New DevExpress.XtraBars.BarButtonItem()
+        Me.btnRapaportCredentials = New DevExpress.XtraBars.BarButtonItem()
+        Me.btnUserPermissions = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnComp = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnBranch_ = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnUser_ = New DevExpress.XtraBars.BarButtonItem()
         Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup10 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -123,7 +128,6 @@ Partial Class FrmMain
         Me.RibbonPage3 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup9 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.MASTER = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup4 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup8 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -131,8 +135,9 @@ Partial Class FrmMain
         Me.RibbonPageGroup6 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPage5 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup11 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPage6 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.MenuAdmin = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup12 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup13 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RepositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
         Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
         Me.RibbonPage4 = New DevExpress.XtraBars.Ribbon.RibbonPage()
@@ -147,12 +152,12 @@ Partial Class FrmMain
         'MainMenu
         '
         Me.MainMenu.ExpandCollapseItem.Id = 0
-        Me.MainMenu.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainMenu.ExpandCollapseItem, Me.MainMenu.SearchEditItem, Me.BtnCompany, Me.BarButtonItem1, Me.BtnBranch, Me.BtnUser, Me.BtnShape, Me.BtnColor, Me.BtnClarity, Me.BtnSize, Me.BtnCut, Me.BtnCPS, Me.BtnSym, Me.BtnFloro, Me.BtnTension, Me.Btnlab, Me.btnPurchase, Me.btnSerie, Me.BarButtonItem2, Me.btnAccounts, Me.btnMainGroups, Me.btnDefaultGroup, Me.BarButtonItem4, Me.SkinRibbonGalleryBarItem1, Me.SkinSelector, Me.BarEditItem1, Me.BarButtonItem5, Me.BarButtonItem6, Me.btnImportExcel, Me.BarButtonItem8, Me.BarButtonItem3, Me.BarButtonItem9, Me.BarMdiChildrenListItem1, Me.BarButtonItem10, Me.BarSubItem1, Me.BarEditItem2, Me.BarSubItem2, Me.BarButtonItem7, Me.BarButtonItem11, Me.btnClipBoard, Me.BarLinkContainerItem1, Me.BarButtonItem13, Me.BarButtonItem14, Me.BarButtonItem16, Me.BarButtonItem17, Me.BarSubItem3, Me.btnReturnProcessList, Me.btnReturnChange, Me.btnIGIExcelImport, Me.btnGIAResultImport, Me.btnGirdle, Me.btnGirdleCondition, Me.btnCulet, Me.btnHRDResultImport, Me.BarButtonItem15, Me.btnInvoice, Me.BarSubItem4, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.btnInvoiceList, Me.btnLotHistory, Me.btnHold, Me.btnPayment, Me.btnPaymentReport, Me.btnReceipt, Me.btnReceiptReport, Me.btnD2D, Me.btnMainStock, Me.BarButtonItem21, Me.BarButtonItem22, Me.btnPacketCreate, Me.BarButtonItem23, Me.BarButtonItem24, Me.dropDownPacketCreation, Me.btnNewPacketCreation, Me.btnPacketCreationList, Me.btnD2dTransferBranch, Me.btnD2DNewTransfer, Me.btnNewD2dTransfer, Me.btnD2dTransferList, Me.btnAskingUpdatePercentage, Me.btnAskingUpdatePPC, Me.btnPriceUpdate, Me.btnVideoLink, Me.BtnRoughVideoImage, Me.btnGradingComparision, Me.btnSale})
+        Me.MainMenu.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainMenu.ExpandCollapseItem, Me.MainMenu.SearchEditItem, Me.BtnCompany, Me.BarButtonItem1, Me.BtnBranch, Me.BtnUser, Me.BtnShape, Me.BtnColor, Me.BtnClarity, Me.BtnSize, Me.BtnCut, Me.BtnCPS, Me.BtnSym, Me.BtnFloro, Me.BtnTension, Me.Btnlab, Me.btnPurchase, Me.btnSerie, Me.BarButtonItem2, Me.btnAccounts, Me.btnMainGroups, Me.btnDefaultGroup, Me.BarButtonItem4, Me.SkinRibbonGalleryBarItem1, Me.SkinSelector, Me.BarEditItem1, Me.BarButtonItem5, Me.BarButtonItem6, Me.btnImportExcel, Me.BarButtonItem8, Me.BarButtonItem3, Me.BarButtonItem9, Me.BarMdiChildrenListItem1, Me.BarButtonItem10, Me.BarSubItem1, Me.BarEditItem2, Me.BarSubItem2, Me.BarButtonItem7, Me.BarButtonItem11, Me.btnClipBoard, Me.BarLinkContainerItem1, Me.BarButtonItem13, Me.BarButtonItem14, Me.BarButtonItem16, Me.BarButtonItem17, Me.BarSubItem3, Me.btnReturnProcessList, Me.btnReturnChange, Me.btnIGIExcelImport, Me.btnGIAResultImport, Me.btnGirdle, Me.btnGirdleCondition, Me.btnCulet, Me.btnHRDResultImport, Me.BarButtonItem15, Me.btnInvoice, Me.BarSubItem4, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.btnInvoiceList, Me.btnLotHistory, Me.btnHold, Me.btnPayment, Me.btnPaymentReport, Me.btnReceipt, Me.btnReceiptReport, Me.btnD2D, Me.btnMainStock, Me.BarButtonItem21, Me.BarButtonItem22, Me.btnPacketCreate, Me.BarButtonItem23, Me.BarButtonItem24, Me.dropDownPacketCreation, Me.btnNewPacketCreation, Me.btnPacketCreationList, Me.btnD2dTransferBranch, Me.btnD2DNewTransfer, Me.btnNewD2dTransfer, Me.btnD2dTransferList, Me.btnAskingUpdatePercentage, Me.btnAskingUpdatePPC, Me.btnPriceUpdate, Me.btnVideoLink, Me.BtnRoughVideoImage, Me.btnGradingComparision, Me.btnSale, Me.btnRapaportCredentials, Me.btnUserPermissions, Me.BtnComp, Me.BtnBranch_, Me.BtnUser_})
         Me.MainMenu.Location = New System.Drawing.Point(0, 0)
-        Me.MainMenu.MaxItemId = 101
+        Me.MainMenu.MaxItemId = 106
         Me.MainMenu.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainMenu.Name = "MainMenu"
-        Me.MainMenu.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage3, Me.MASTER, Me.RibbonPage2, Me.RibbonPage5, Me.RibbonPage6})
+        Me.MainMenu.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage3, Me.MASTER, Me.RibbonPage2, Me.RibbonPage5, Me.MenuAdmin})
         Me.MainMenu.QuickToolbarItemLinks.Add(Me.SkinSelector)
         Me.MainMenu.QuickToolbarItemLinks.Add(Me.btnClipBoard)
         Me.MainMenu.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemGridLookUpEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemComboBox1})
@@ -807,6 +812,41 @@ Partial Class FrmMain
         Me.btnSale.ImageOptions.SvgImage = CType(resources.GetObject("btnSale.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.btnSale.Name = "btnSale"
         '
+        'btnRapaportCredentials
+        '
+        Me.btnRapaportCredentials.Caption = "Rapaport Credentials"
+        Me.btnRapaportCredentials.Id = 101
+        Me.btnRapaportCredentials.ImageOptions.SvgImage = CType(resources.GetObject("btnRapaportCredentials.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.btnRapaportCredentials.Name = "btnRapaportCredentials"
+        '
+        'btnUserPermissions
+        '
+        Me.btnUserPermissions.Caption = "User Permissions"
+        Me.btnUserPermissions.Id = 102
+        Me.btnUserPermissions.ImageOptions.SvgImage = CType(resources.GetObject("btnUserPermissions.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.btnUserPermissions.Name = "btnUserPermissions"
+        '
+        'BtnComp
+        '
+        Me.BtnComp.Caption = "Company"
+        Me.BtnComp.Id = 103
+        Me.BtnComp.ImageOptions.SvgImage = CType(resources.GetObject("BtnComp.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnComp.Name = "BtnComp"
+        '
+        'BtnBranch_
+        '
+        Me.BtnBranch_.Caption = "Branch"
+        Me.BtnBranch_.Id = 104
+        Me.BtnBranch_.ImageOptions.SvgImage = CType(resources.GetObject("BtnBranch_.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnBranch_.Name = "BtnBranch_"
+        '
+        'BtnUser_
+        '
+        Me.BtnUser_.Caption = "User"
+        Me.BtnUser_.Id = 105
+        Me.BtnUser_.ImageOptions.SvgImage = CType(resources.GetObject("BtnUser_.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BtnUser_.Name = "BtnUser_"
+        '
         'RibbonPage1
         '
         Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup10, Me.RibbonPageGroup3, Me.RibbonPageGroup5, Me.RibbonPageGroup7})
@@ -862,18 +902,9 @@ Partial Class FrmMain
         '
         'MASTER
         '
-        Me.MASTER.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup2, Me.RibbonPageGroup4, Me.RibbonPageGroup8})
+        Me.MASTER.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup2, Me.RibbonPageGroup4, Me.RibbonPageGroup8})
         Me.MASTER.Name = "MASTER"
         Me.MASTER.Text = "Masters"
-        '
-        'RibbonPageGroup1
-        '
-        Me.RibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BtnCompany)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BtnBranch)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BtnUser)
-        Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
-        Me.RibbonPageGroup1.Text = "Admin Masters"
         '
         'RibbonPageGroup2
         '
@@ -927,16 +958,25 @@ Partial Class FrmMain
         Me.RibbonPageGroup11.ItemLinks.Add(Me.btnGradingComparision)
         Me.RibbonPageGroup11.Name = "RibbonPageGroup11"
         '
-        'RibbonPage6
+        'MenuAdmin
         '
-        Me.RibbonPage6.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup12})
-        Me.RibbonPage6.Name = "RibbonPage6"
-        Me.RibbonPage6.Text = "Work"
+        Me.MenuAdmin.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup12, Me.RibbonPageGroup13})
+        Me.MenuAdmin.Name = "MenuAdmin"
+        Me.MenuAdmin.Text = "Admin"
         '
         'RibbonPageGroup12
         '
         Me.RibbonPageGroup12.ItemLinks.Add(Me.btnSale)
+        Me.RibbonPageGroup12.ItemLinks.Add(Me.BtnComp)
+        Me.RibbonPageGroup12.ItemLinks.Add(Me.BtnBranch_)
+        Me.RibbonPageGroup12.ItemLinks.Add(Me.BtnUser_)
         Me.RibbonPageGroup12.Name = "RibbonPageGroup12"
+        '
+        'RibbonPageGroup13
+        '
+        Me.RibbonPageGroup13.ItemLinks.Add(Me.btnRapaportCredentials)
+        Me.RibbonPageGroup13.ItemLinks.Add(Me.btnUserPermissions)
+        Me.RibbonPageGroup13.Name = "RibbonPageGroup13"
         '
         'RepositoryItemComboBox1
         '
@@ -979,7 +1019,6 @@ Partial Class FrmMain
 
     Friend WithEvents MainMenu As DevExpress.XtraBars.Ribbon.RibbonControl
     Friend WithEvents MASTER As DevExpress.XtraBars.Ribbon.RibbonPage
-    Friend WithEvents RibbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents BtnCompany As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnBranch As DevExpress.XtraBars.BarButtonItem
@@ -1086,6 +1125,12 @@ Partial Class FrmMain
     Friend WithEvents BtnRoughVideoImage As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents btnGradingComparision As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents btnSale As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents RibbonPage6 As DevExpress.XtraBars.Ribbon.RibbonPage
+    Friend WithEvents MenuAdmin As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup12 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents btnRapaportCredentials As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents btnUserPermissions As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents RibbonPageGroup13 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents BtnComp As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnBranch_ As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnUser_ As DevExpress.XtraBars.BarButtonItem
 End Class

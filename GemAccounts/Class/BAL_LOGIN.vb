@@ -12,6 +12,7 @@ Public Class BAL_LOGIN
         Public UserID As Integer
         Public CompanyID As Integer
         Public StockLayoutID As Integer
+        Public ShowAdminTab As Boolean
     End Structure
     Public Function CheckLogin(ByVal user As TextBox, ByVal password As TextBox, ByVal br_id As Integer, ByVal cmp_id As Integer) As RoleData
         Dim returnStructure As New RoleData
@@ -31,18 +32,27 @@ Public Class BAL_LOGIN
         CMD.Parameters.AddWithValue("@cmp_id", cmp_id)
         RDR = CMD.ExecuteReader
         If RDR.HasRows Then
+
             While RDR.Read
                 If UCase(RDR.Item("user_name").ToString) = UCase(user.Text) And RDR.Item("password").ToString = password.Text Then
                     returnStructure.Login = True
+                    Dim dr1 As DataRow = GENERAL_FUNCTIONS.NFetchDataRow("select top(1)* from tbl_user_permission where UserID=" & RDR.Item("user_id").ToString)
+                    If dr1 Is Nothing Then
+
+                    Else
+                        returnStructure.ShowAdminTab = dr1("show_admin_menu")
+                    End If
                     returnStructure.CompanyID = RDR.Item("cmp_id").ToString
                     returnStructure.BranchID = RDR.Item("br_id").ToString
                     returnStructure.Username = RDR.Item("user_name").ToString
                     returnStructure.Urole = "" 'RDR.Item("UTYPE").ToString
                     returnStructure.UserID = RDR.Item("user_id").ToString
                     returnStructure.StockLayoutID = RDR.Item("StockLayoutID").ToString
+
                     Exit While
                 End If
             End While
+
         Else
             returnStructure.Login = False
             returnStructure.CompanyID = Nothing

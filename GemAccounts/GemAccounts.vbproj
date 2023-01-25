@@ -184,6 +184,18 @@
     <Compile Include="Account Masters\frmMainGroup.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\FrmRapaportCredentials.Designer.vb">
+      <DependentUpon>FrmRapaportCredentials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmRapaportCredentials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmUserPermission.Designer.vb">
+      <DependentUpon>FrmUserPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmUserPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Banking\frmReceiptReport.Designer.vb">
       <DependentUpon>frmReceiptReport.vb</DependentUpon>
     </Compile>
@@ -213,6 +225,7 @@
     <Compile Include="Class\DevFunctions.vb" />
     <Compile Include="Class\LabTranslation.vb" />
     <Compile Include="Class\Rapaport.vb" />
+    <Compile Include="Class\UserPermission.vb" />
     <Compile Include="Dia_MasterDataset.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -590,6 +603,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Account Masters\frmMainGroup.resx">
       <DependentUpon>frmMainGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmRapaportCredentials.resx">
+      <DependentUpon>FrmRapaportCredentials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmUserPermission.resx">
+      <DependentUpon>FrmUserPermission.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banking\frmReceiptReport.resx">
       <DependentUpon>frmReceiptReport.vb</DependentUpon>

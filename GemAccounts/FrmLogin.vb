@@ -14,6 +14,7 @@ Public Class FrmLogin
             CID = a.CompanyID
             UID = a.UserID
             StockLayoutID = a.StockLayoutID
+            UserPermission.ShowAdminTab = a.ShowAdminTab
 
             Dim frm As New FrmMain
             frm.Show()
