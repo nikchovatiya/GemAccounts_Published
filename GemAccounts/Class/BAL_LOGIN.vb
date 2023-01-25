@@ -13,6 +13,9 @@ Public Class BAL_LOGIN
         Public CompanyID As Integer
         Public StockLayoutID As Integer
         Public ShowAdminTab As Boolean
+        Public EditInvoice As Boolean
+        Public DeleteInvoice As Boolean
+        Public ViewInvoiceList As Boolean
     End Structure
     Public Function CheckLogin(ByVal user As TextBox, ByVal password As TextBox, ByVal br_id As Integer, ByVal cmp_id As Integer) As RoleData
         Dim returnStructure As New RoleData
@@ -41,6 +44,9 @@ Public Class BAL_LOGIN
 
                     Else
                         returnStructure.ShowAdminTab = dr1("show_admin_menu")
+                        returnStructure.EditInvoice = dr1("edit_invoice")
+                        returnStructure.DeleteInvoice = dr1("delete_invoice")
+                        returnStructure.ViewInvoiceList = dr1("view_invoice_list")
                     End If
                     returnStructure.CompanyID = RDR.Item("cmp_id").ToString
                     returnStructure.BranchID = RDR.Item("br_id").ToString

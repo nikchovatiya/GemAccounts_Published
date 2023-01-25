@@ -15,6 +15,9 @@ Public Class FrmLogin
             UID = a.UserID
             StockLayoutID = a.StockLayoutID
             UserPermission.ShowAdminTab = a.ShowAdminTab
+            UserPermission.EditInvoice = a.EditInvoice
+            UserPermission.DeleteInvoice = a.DeleteInvoice
+            UserPermission.ViewInvoiceList = a.ViewInvoiceList
 
             Dim frm As New FrmMain
             frm.Show()

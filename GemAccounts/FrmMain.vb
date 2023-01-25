@@ -130,6 +130,9 @@ Public Class FrmMain
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = UNAME
         If UserPermission.ShowAdminTab = False Then MenuAdmin.Visible = False
+        If UserPermission.ViewInvoiceList = False Then
+            btnInvoiceList.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        End If
     End Sub
     Private Sub BarButtonItem14_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem14.ItemClick
         setform(FrmSendtoProcess)

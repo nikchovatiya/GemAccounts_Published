@@ -1980,14 +1980,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GemAccounts.exe" size="3378688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GemAccounts.exe" size="3380224">
       <assemblyIdentity name="GemAccounts" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gxhTiEpUNfl8xZBTws+YOmbHGE4soFVfItKJv6HGNxM=</dsig:DigestValue>
+        <dsig:DigestValue>sz4kADDlXTD/VKEmyNun7KStUbUBN5WqAnWKlGLAjHI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

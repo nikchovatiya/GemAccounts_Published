@@ -21,7 +21,7 @@ Public Class FrmInvoiceList
             GLOBAL_VARIABLES.TmpFileName = ""
         End If
 
-        SalesEditFlag = True
+        GLOBAL_VARIABLES.SalesEditFlag = True
         FrmInvoiceList.SalesMasterID = dgview.GetFocusedRowCellValue("SalesMasterID")
         setform(FrmInvoice)
     End Sub
@@ -84,15 +84,20 @@ Public Class FrmInvoiceList
     End Function
 
     Private Sub riDelete_OpenLink(sender As Object, e As OpenLinkEventArgs) Handles riDelete.OpenLink
-        If XtraMessageBox.Show("Do you want to delete this Row?", "Mauni Diamond", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-
-            If CheckValidation(dgview.GetFocusedRowCellValue("SalesMasterID")) = True Then
-                DevFunctions.InfoMsg("Invoice deleted successfully")
-                FrmInvoiceList_Load(sender, e)
-            End If
+        If UserPermission.DeleteInvoice = False Then
+            DevFunctions.ErrorMsg("You have not permission to delete invoice.")
         Else
-            Return
+            If XtraMessageBox.Show("Do you want to delete this Row?", "Mauni Diamond", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+
+                If CheckValidation(dgview.GetFocusedRowCellValue("SalesMasterID")) = True Then
+                    DevFunctions.InfoMsg("Invoice deleted successfully")
+                    FrmInvoiceList_Load(sender, e)
+                End If
+            Else
+                Return
+            End If
         End If
+
     End Sub
 
     Private Sub dgview_RowCellClick(sender As Object, e As RowCellClickEventArgs) Handles dgview.RowCellClick

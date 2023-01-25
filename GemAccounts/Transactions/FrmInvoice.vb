@@ -49,11 +49,22 @@ Public Class FrmInvoice
         Me.Dia_Color_MasterTableAdapter.Fill(Me.Dia_MasterDataset.Dia_Color_Master)
         'TODO: This line of code loads data into the 'Dia_MasterDataset.Dia_Shape_Master' table. You can move, or remove it, as needed.
         Me.Dia_Shape_MasterTableAdapter.Fill(Me.Dia_MasterDataset.Dia_Shape_Master)
+
+        If GLOBAL_VARIABLES.SalesEditFlag = True Then
+
+        End If
+
+
         cancel()
 
         If GLOBAL_VARIABLES.SalesEditFlag = False Then
             txtExRate.EditValue = GLOBAL_VARIABLES.ExRate
         Else
+            If UserPermission.EditInvoice = False Then
+                BtnSave.Enabled = False
+                btnSaveClose.Enabled = False
+                btnCancel.Enabled = False
+            End If
             Dim SalesDetailsDT As DataTable = NFetchDatatable("Select * from Dia_SalesDetails where SalesMasterID=" & FrmInvoiceList.SalesMasterID)
             Dim SalesMasterDR As DataRow = NFetchDataRow("Select * from Dia_SalesMaster where SalesMasterID=" & FrmInvoiceList.SalesMasterID)
             AdditionalDT = NFetchDatatable("Select * from Dia_SalesAdditional where SalesMasterID=" & FrmInvoiceList.SalesMasterID)

@@ -20,9 +20,11 @@ Partial Class FrmUserPermission
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
+        Me.BtnClose = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
         Me.cmbuser = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.dg = New DevExpress.XtraVerticalGrid.VGridControl()
-        Me.riViewAdminTab = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
+        Me.riCheckBox = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.category = New DevExpress.XtraVerticalGrid.Rows.CategoryRow()
         Me.row = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
@@ -30,15 +32,17 @@ Partial Class FrmUserPermission
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
         Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
-        Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.BtnClose = New DevExpress.XtraEditors.SimpleButton()
         Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.category1 = New DevExpress.XtraVerticalGrid.Rows.CategoryRow()
+        Me.row1 = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
+        Me.row2 = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
+        Me.row3 = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
         CType(Me.cmbuser.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dg, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.riViewAdminTab, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.riCheckBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,6 +66,24 @@ Partial Class FrmUserPermission
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "v"
         '
+        'BtnClose
+        '
+        Me.BtnClose.Location = New System.Drawing.Point(744, 12)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(65, 22)
+        Me.BtnClose.StyleController = Me.LayoutControl1
+        Me.BtnClose.TabIndex = 7
+        Me.BtnClose.Text = "Close"
+        '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(683, 12)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(57, 22)
+        Me.btnSave.StyleController = Me.LayoutControl1
+        Me.btnSave.TabIndex = 6
+        Me.btnSave.Text = "Save"
+        '
         'cmbuser
         '
         Me.cmbuser.Location = New System.Drawing.Point(37, 12)
@@ -74,20 +96,20 @@ Partial Class FrmUserPermission
         'dg
         '
         Me.dg.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.dg.Cursor = System.Windows.Forms.Cursors.Default
+        Me.dg.Cursor = System.Windows.Forms.Cursors.SizeNS
         Me.dg.CustomizationFormBounds = New System.Drawing.Rectangle(523, 195, 210, 254)
         Me.dg.LayoutStyle = DevExpress.XtraVerticalGrid.LayoutViewStyle.SingleRecordView
         Me.dg.Location = New System.Drawing.Point(12, 48)
         Me.dg.Name = "dg"
-        Me.dg.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.riViewAdminTab})
-        Me.dg.Rows.AddRange(New DevExpress.XtraVerticalGrid.Rows.BaseRow() {Me.category})
+        Me.dg.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.riCheckBox})
+        Me.dg.Rows.AddRange(New DevExpress.XtraVerticalGrid.Rows.BaseRow() {Me.category, Me.category1})
         Me.dg.Size = New System.Drawing.Size(797, 282)
         Me.dg.TabIndex = 4
         '
-        'riViewAdminTab
+        'riCheckBox
         '
-        Me.riViewAdminTab.AutoHeight = False
-        Me.riViewAdminTab.Name = "riViewAdminTab"
+        Me.riCheckBox.AutoHeight = False
+        Me.riCheckBox.Name = "riCheckBox"
         '
         'category
         '
@@ -100,7 +122,7 @@ Partial Class FrmUserPermission
         Me.row.Name = "row"
         Me.row.Properties.Caption = "Allow to view Admin tab"
         Me.row.Properties.FieldName = "show_admin_menu"
-        Me.row.Properties.RowEdit = Me.riViewAdminTab
+        Me.row.Properties.RowEdit = Me.riCheckBox
         '
         'Root
         '
@@ -151,15 +173,6 @@ Partial Class FrmUserPermission
         Me.EmptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(683, 12)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(57, 22)
-        Me.btnSave.StyleController = Me.LayoutControl1
-        Me.btnSave.TabIndex = 6
-        Me.btnSave.Text = "Save"
-        '
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.btnSave
@@ -171,15 +184,6 @@ Partial Class FrmUserPermission
         Me.LayoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem3.TextVisible = False
-        '
-        'BtnClose
-        '
-        Me.BtnClose.Location = New System.Drawing.Point(744, 12)
-        Me.BtnClose.Name = "BtnClose"
-        Me.BtnClose.Size = New System.Drawing.Size(65, 22)
-        Me.BtnClose.StyleController = Me.LayoutControl1
-        Me.BtnClose.TabIndex = 7
-        Me.BtnClose.Text = "Close"
         '
         'LayoutControlItem4
         '
@@ -193,6 +197,33 @@ Partial Class FrmUserPermission
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem4.TextVisible = False
         '
+        'category1
+        '
+        Me.category1.ChildRows.AddRange(New DevExpress.XtraVerticalGrid.Rows.BaseRow() {Me.row1, Me.row2, Me.row3})
+        Me.category1.Name = "category1"
+        Me.category1.Properties.Caption = "Invoice"
+        '
+        'row1
+        '
+        Me.row1.Name = "row1"
+        Me.row1.Properties.Caption = "Allow to Edit Invoice"
+        Me.row1.Properties.FieldName = "edit_invoice"
+        Me.row1.Properties.RowEdit = Me.riCheckBox
+        '
+        'row2
+        '
+        Me.row2.Name = "row2"
+        Me.row2.Properties.Caption = "Allow to Delete Invoice"
+        Me.row2.Properties.FieldName = "delete_invoice"
+        Me.row2.Properties.RowEdit = Me.riCheckBox
+        '
+        'row3
+        '
+        Me.row3.Name = "row3"
+        Me.row3.Properties.Caption = "Allow to View Invoice List"
+        Me.row3.Properties.FieldName = "view_invoice_list"
+        Me.row3.Properties.RowEdit = Me.riCheckBox
+        '
         'FrmUserPermission
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -205,7 +236,7 @@ Partial Class FrmUserPermission
         Me.LayoutControl1.ResumeLayout(False)
         CType(Me.cmbuser.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dg, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.riViewAdminTab, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.riCheckBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -221,7 +252,7 @@ Partial Class FrmUserPermission
     Friend WithEvents Root As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents dg As DevExpress.XtraVerticalGrid.VGridControl
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents riViewAdminTab As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Friend WithEvents riCheckBox As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
     Friend WithEvents category As DevExpress.XtraVerticalGrid.Rows.CategoryRow
     Friend WithEvents row As DevExpress.XtraVerticalGrid.Rows.EditorRow
     Friend WithEvents cmbuser As DevExpress.XtraEditors.ComboBoxEdit
@@ -232,4 +263,8 @@ Partial Class FrmUserPermission
     Friend WithEvents btnSave As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents category1 As DevExpress.XtraVerticalGrid.Rows.CategoryRow
+    Friend WithEvents row1 As DevExpress.XtraVerticalGrid.Rows.EditorRow
+    Friend WithEvents row2 As DevExpress.XtraVerticalGrid.Rows.EditorRow
+    Friend WithEvents row3 As DevExpress.XtraVerticalGrid.Rows.EditorRow
 End Class
