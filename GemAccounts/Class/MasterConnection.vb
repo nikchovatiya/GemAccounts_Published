@@ -6,7 +6,7 @@ Imports GemAccounts.GLOBAL_VARIABLES
 Public Class MasterConnection
     Public Shared con As SqlConnection
 
-    Public Shared constring As String = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+
 
     Public Function Connection() As SqlConnection
         Dim constring As String = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString

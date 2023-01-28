@@ -4889,4 +4889,3 @@ D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.app
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.exe
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.xml
 D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.pdb
-D:\Nikunj\GemAccount\GemAccounts_Published\GemAccounts\obj\Debug\GemAccounts.vbprojResolveAssemblyReference.cache

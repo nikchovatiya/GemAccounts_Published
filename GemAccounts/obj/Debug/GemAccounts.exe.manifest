@@ -1987,7 +1987,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fG/XuAnHq+RKc2cfpI26bm/QJi/A5BkaAV4Ft/kP0/c=</dsig:DigestValue>
+        <dsig:DigestValue>FTJ0RK3iq1OyD1B7VgC33mNDLPq8dVF/pDQf77Vi1Ws=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2036,13 +2036,13 @@
       <dsig:DigestValue>CO4mX3ZLtfV/igx8t4X3c0VUrcuRYntgx4muMYkYjZ4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GemAccounts.exe.config" size="2567">
+  <file name="GemAccounts.exe.config" size="2407">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2qYgcQTU09Pl8W6dIrzDwDFviGyGn/rql0C3Ai1CBUk=</dsig:DigestValue>
+      <dsig:DigestValue>QTLfdD5bt5JResxKTcWxpgS7WX7sPbrUoO7S31ejscs=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

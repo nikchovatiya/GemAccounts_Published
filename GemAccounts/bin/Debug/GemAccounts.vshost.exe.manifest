@@ -1987,7 +1987,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fG/XuAnHq+RKc2cfpI26bm/QJi/A5BkaAV4Ft/kP0/c=</dsig:DigestValue>
+        <dsig:DigestValue>ZBd7iSsFh0l69dlH2XeDR2nMNYq9udngIZWlD3Xj3lg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
