@@ -142,17 +142,7 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:GemAccounts.Dia_MasterDataset.Dia_TransactionsDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:GemAccounts.Dia_MasterDataset.Dia_UpdateRapaportDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:GemAccounts.Dia_MasterDataset.Dia_User_MasterDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -198,6 +188,41 @@ Represents the strongly named DataTable class.
 </summary>
 </member>
 <member name="T:GemAccounts.Dia_MasterDataset.Dia_SalesMasterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_MainStock1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_Payment_MasterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_Receipt_MasterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_TranscationDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_User_MasterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.tbl_rapaport_credentialsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.tbl_user_permissionDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -317,17 +342,7 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:GemAccounts.Dia_MasterDataset.Dia_TransactionsRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
 <member name="T:GemAccounts.Dia_MasterDataset.Dia_UpdateRapaportRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:GemAccounts.Dia_MasterDataset.Dia_User_MasterRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -373,6 +388,41 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:GemAccounts.Dia_MasterDataset.Dia_SalesMasterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_MainStock1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_Payment_MasterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_Receipt_MasterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_TranscationRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_User_MasterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.tbl_rapaport_credentialsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.tbl_user_permissionRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -492,17 +542,7 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:GemAccounts.Dia_MasterDataset.Dia_TransactionsRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:GemAccounts.Dia_MasterDataset.Dia_UpdateRapaportRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:GemAccounts.Dia_MasterDataset.Dia_User_MasterRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -548,6 +588,41 @@ Row event argument class
 </summary>
 </member>
 <member name="T:GemAccounts.Dia_MasterDataset.Dia_SalesMasterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_MainStock1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_Payment_MasterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_Receipt_MasterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_TranscationRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.Dia_User_MasterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.tbl_rapaport_credentialsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDataset.tbl_user_permissionRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -667,17 +742,7 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_TransactionsTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
 <member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_UpdateRapaportTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_User_MasterTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -723,6 +788,41 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_SalesMasterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_MainStock1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_Payment_MasterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_Receipt_MasterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_TranscationTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.Dia_User_MasterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.tbl_rapaport_credentialsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:GemAccounts.Dia_MasterDatasetTableAdapters.tbl_user_permissionTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

@@ -57,7 +57,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=ajaymauni;Initial Catalog=DIA_MASTER;Integrated Security=True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=90-214-109-208;Initial Catalog=DIA_MASTER;Integrated Security=True")>  _
         Public ReadOnly Property DIA_MASTERConnectionString() As String
             Get
                 Return CType(Me("DIA_MASTERConnectionString"),String)

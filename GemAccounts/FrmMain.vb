@@ -283,4 +283,8 @@ Public Class FrmMain
     Private Sub btnUserPermissions_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnUserPermissions.ItemClick
         setform(FrmUserPermission)
     End Sub
+
+    Private Sub btnUpdatePrices_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnUpdatePrices.ItemClick
+        setform(FrmUpdatePrices)
+    End Sub
 End Class

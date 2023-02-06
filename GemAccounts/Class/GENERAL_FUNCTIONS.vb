@@ -904,6 +904,7 @@ Public Class GENERAL_FUNCTIONS
     Public Shared Function NFetchDatatable(ByVal Query As String) As DataTable
         Dim dtp As New DataSet
         ADP = New SqlDataAdapter(Query, VarCon.Connection)
+        ADP.SelectCommand.CommandTimeout = 60
         ADP.Fill(dtp)
         NFetchDatatable = dtp.Tables(0)
         VarCon.CloseConnection()

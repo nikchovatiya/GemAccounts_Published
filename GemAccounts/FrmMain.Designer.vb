@@ -141,6 +141,7 @@ Partial Class FrmMain
         Me.RepositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
         Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
         Me.RibbonPage4 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.btnUpdatePrices = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.MainMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemGridLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemGridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,9 +153,9 @@ Partial Class FrmMain
         'MainMenu
         '
         Me.MainMenu.ExpandCollapseItem.Id = 0
-        Me.MainMenu.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainMenu.ExpandCollapseItem, Me.MainMenu.SearchEditItem, Me.BtnCompany, Me.BarButtonItem1, Me.BtnBranch, Me.BtnUser, Me.BtnShape, Me.BtnColor, Me.BtnClarity, Me.BtnSize, Me.BtnCut, Me.BtnCPS, Me.BtnSym, Me.BtnFloro, Me.BtnTension, Me.Btnlab, Me.btnPurchase, Me.btnSerie, Me.BarButtonItem2, Me.btnAccounts, Me.btnMainGroups, Me.btnDefaultGroup, Me.BarButtonItem4, Me.SkinRibbonGalleryBarItem1, Me.SkinSelector, Me.BarEditItem1, Me.BarButtonItem5, Me.BarButtonItem6, Me.btnImportExcel, Me.BarButtonItem8, Me.BarButtonItem3, Me.BarButtonItem9, Me.BarMdiChildrenListItem1, Me.BarButtonItem10, Me.BarSubItem1, Me.BarEditItem2, Me.BarSubItem2, Me.BarButtonItem7, Me.BarButtonItem11, Me.btnClipBoard, Me.BarLinkContainerItem1, Me.BarButtonItem13, Me.BarButtonItem14, Me.BarButtonItem16, Me.BarButtonItem17, Me.BarSubItem3, Me.btnReturnProcessList, Me.btnReturnChange, Me.btnIGIExcelImport, Me.btnGIAResultImport, Me.btnGirdle, Me.btnGirdleCondition, Me.btnCulet, Me.btnHRDResultImport, Me.BarButtonItem15, Me.btnInvoice, Me.BarSubItem4, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.btnInvoiceList, Me.btnLotHistory, Me.btnHold, Me.btnPayment, Me.btnPaymentReport, Me.btnReceipt, Me.btnReceiptReport, Me.btnD2D, Me.btnMainStock, Me.BarButtonItem21, Me.BarButtonItem22, Me.btnPacketCreate, Me.BarButtonItem23, Me.BarButtonItem24, Me.dropDownPacketCreation, Me.btnNewPacketCreation, Me.btnPacketCreationList, Me.btnD2dTransferBranch, Me.btnD2DNewTransfer, Me.btnNewD2dTransfer, Me.btnD2dTransferList, Me.btnAskingUpdatePercentage, Me.btnAskingUpdatePPC, Me.btnPriceUpdate, Me.btnVideoLink, Me.BtnRoughVideoImage, Me.btnGradingComparision, Me.btnSale, Me.btnRapaportCredentials, Me.btnUserPermissions, Me.BtnComp, Me.BtnBranch_, Me.BtnUser_})
+        Me.MainMenu.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MainMenu.ExpandCollapseItem, Me.MainMenu.SearchEditItem, Me.BtnCompany, Me.BarButtonItem1, Me.BtnBranch, Me.BtnUser, Me.BtnShape, Me.BtnColor, Me.BtnClarity, Me.BtnSize, Me.BtnCut, Me.BtnCPS, Me.BtnSym, Me.BtnFloro, Me.BtnTension, Me.Btnlab, Me.btnPurchase, Me.btnSerie, Me.BarButtonItem2, Me.btnAccounts, Me.btnMainGroups, Me.btnDefaultGroup, Me.BarButtonItem4, Me.SkinRibbonGalleryBarItem1, Me.SkinSelector, Me.BarEditItem1, Me.BarButtonItem5, Me.BarButtonItem6, Me.btnImportExcel, Me.BarButtonItem8, Me.BarButtonItem3, Me.BarButtonItem9, Me.BarMdiChildrenListItem1, Me.BarButtonItem10, Me.BarSubItem1, Me.BarEditItem2, Me.BarSubItem2, Me.BarButtonItem7, Me.BarButtonItem11, Me.btnClipBoard, Me.BarLinkContainerItem1, Me.BarButtonItem13, Me.BarButtonItem14, Me.BarButtonItem16, Me.BarButtonItem17, Me.BarSubItem3, Me.btnReturnProcessList, Me.btnReturnChange, Me.btnIGIExcelImport, Me.btnGIAResultImport, Me.btnGirdle, Me.btnGirdleCondition, Me.btnCulet, Me.btnHRDResultImport, Me.BarButtonItem15, Me.btnInvoice, Me.BarSubItem4, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.btnInvoiceList, Me.btnLotHistory, Me.btnHold, Me.btnPayment, Me.btnPaymentReport, Me.btnReceipt, Me.btnReceiptReport, Me.btnD2D, Me.btnMainStock, Me.BarButtonItem21, Me.BarButtonItem22, Me.btnPacketCreate, Me.BarButtonItem23, Me.BarButtonItem24, Me.dropDownPacketCreation, Me.btnNewPacketCreation, Me.btnPacketCreationList, Me.btnD2dTransferBranch, Me.btnD2DNewTransfer, Me.btnNewD2dTransfer, Me.btnD2dTransferList, Me.btnAskingUpdatePercentage, Me.btnAskingUpdatePPC, Me.btnPriceUpdate, Me.btnVideoLink, Me.BtnRoughVideoImage, Me.btnGradingComparision, Me.btnSale, Me.btnRapaportCredentials, Me.btnUserPermissions, Me.BtnComp, Me.BtnBranch_, Me.BtnUser_, Me.btnUpdatePrices})
         Me.MainMenu.Location = New System.Drawing.Point(0, 0)
-        Me.MainMenu.MaxItemId = 106
+        Me.MainMenu.MaxItemId = 107
         Me.MainMenu.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.MainMenu.Name = "MainMenu"
         Me.MainMenu.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage3, Me.MASTER, Me.RibbonPage2, Me.RibbonPage5, Me.MenuAdmin})
@@ -976,6 +977,7 @@ Partial Class FrmMain
         '
         Me.RibbonPageGroup13.ItemLinks.Add(Me.btnRapaportCredentials)
         Me.RibbonPageGroup13.ItemLinks.Add(Me.btnUserPermissions)
+        Me.RibbonPageGroup13.ItemLinks.Add(Me.btnUpdatePrices)
         Me.RibbonPageGroup13.Name = "RibbonPageGroup13"
         '
         'RepositoryItemComboBox1
@@ -993,6 +995,13 @@ Partial Class FrmMain
         '
         Me.RibbonPage4.Name = "RibbonPage4"
         Me.RibbonPage4.Text = "RibbonPage4"
+        '
+        'btnUpdatePrices
+        '
+        Me.btnUpdatePrices.Caption = "Update Prices"
+        Me.btnUpdatePrices.Id = 106
+        Me.btnUpdatePrices.ImageOptions.SvgImage = CType(resources.GetObject("BarButtonItem12.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.btnUpdatePrices.Name = "btnUpdatePrices"
         '
         'FrmMain
         '
@@ -1133,4 +1142,5 @@ Partial Class FrmMain
     Friend WithEvents BtnComp As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnBranch_ As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BtnUser_ As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents btnUpdatePrices As DevExpress.XtraBars.BarButtonItem
 End Class
